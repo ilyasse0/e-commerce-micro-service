@@ -1,4 +1,8 @@
 package com.ecommerce.orderline;
 
-public class OrderLineResponse {
+public record OrderLineResponse(
+        Integer id,
+        double quantity
+) {
+
 }

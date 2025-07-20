@@ -1,4 +1,8 @@
 package com.ecommerce.order;
 
-public class PaymentMethode {
+public enum   PaymentMethode {
+    PAYPAL,
+    CREDIT_CARD,
+    VISA,
+    MASTER_CARD
 }

@@ -1,4 +1,9 @@
 package com.ecommerce.orderline;
 
-public record OrderLineRequest() {
+public record OrderLineRequest(
+        Integer id ,
+        Integer orderId,
+        Integer productId,
+        double quantity
+) {
 }

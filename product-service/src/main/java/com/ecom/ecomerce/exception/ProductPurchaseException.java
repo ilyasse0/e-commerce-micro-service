@@ -1,6 +1,7 @@
-package com.ecom.ecommerce.exception;
+package com.ecom.ecomerce.exception;
 
-public class ProductPurchaseException extends Throwable {
+public class ProductPurchaseException extends RuntimeException {
     public ProductPurchaseException(String s) {
+        super(s);
     }
 }

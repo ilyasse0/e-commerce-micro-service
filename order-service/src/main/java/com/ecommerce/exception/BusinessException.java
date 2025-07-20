@@ -1,6 +1,10 @@
 package com.ecommerce.exception;
 
-public class BusinessExeption extends @org.jetbrains.annotations.NotNull X {
-    public BusinessExeption(String s) {
-    }
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
+@Data
+public class BusinessException extends RuntimeException {
+    private final String message;
 }
